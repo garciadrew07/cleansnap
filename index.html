@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free up iPhone & Android storage instantly. CleanSnap finds and deletes duplicate photos, similar images, and blurry shots. Smart AI cleanup in seconds.">
+  <meta name="keywords" content="photo cleanup, duplicate photos, delete similar photos, free up space, storage cleaner, phone cleanup">
+  <meta property="og:title" content="CleanSnap - Smart Photo Cleanup | Free Up Space Instantly">
+  <meta property="og:description" content="Find and delete duplicate photos, similar images, and blurry shots. Free up gigabytes in minutes.">
+  <meta property="og:image" content="https://YOUR_USERNAME.github.io/cleansnap/og-image.png">
+  <meta property="og:url" content="https://YOUR_USERNAME.github.io/cleansnap/">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <title>CleanSnap - Smart Photo Cleanup | Free Up Space Instantly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX"
+       crossorigin="anonymous"></script>
+  
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      color: #1a1a2e;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      color: white;
+    }
+    
+    .hero h1 {
+      font-size: 64px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      letter-spacing: -2px;
+      line-height: 1.1;
+    }
+    
+    .hero p {
+      font-size: 24px;
+      opacity: 0.95;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+    
+    .cta-button {
+      background: white;
+      color: #667eea;
+      padding: 20px 50px;
+      border: none;
+      border-radius: 50px;
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      transition: all 0.3s;
+      display: inline-block;
+      text-decoration: none;
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 25px 70px rgba(0,0,0,0.4);
+    }
+    
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 60px 0;
+    }
+    
+    .feature-card {
+      background: rgba(255,255,255,0.95);
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    .feature-icon {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+    
+    .feature-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #667eea;
+    }
+    
+    .feature-desc {
+      color: #666;
+      line-height: 1.6;
+    }
+    
+    .stats {
+      text-align: center;
+      padding: 60px 20px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 30px;
+      margin: 60px 0;
+      backdrop-filter: blur(10px);
+    }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      margin-top: 40px;
+    }
+    
+    .stat-item {
+      color: white;
+    }
+    
+    .stat-number {
+      font-size: 56px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    
+    .stat-label {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+    
+    .how-it-works {
+      margin: 80px 0;
+    }
+    
+    .section-title {
+      text-align: center;
+      font-size: 48px;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 60px;
+    }
+    
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    
+    .step {
+      background: rgba(255,255,255,0.95);
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+    }
+    
+    .step-number {
+      width: 60px;
+      height: 60px;
+      background: #667eea;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 auto 20px;
+    }
+    
+    .step-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #667eea;
+    }
+    
+    .testimonials {
+      margin: 80px 0;
+    }
+    
+    .testimonial-card {
+      background: rgba(255,255,255,0.95);
+      padding: 30px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .testimonial-text {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+    
+    .testimonial-author {
+      font-weight: 600;
+      color: #667eea;
+    }
+    
+    .faq {
+      margin: 80px 0;
+    }
+    
+    .faq-item {
+      background: rgba(255,255,255,0.95);
+      padding: 30px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .faq-question {
+      font-size: 20px;
+      font-weight: 700;
+      color: #667eea;
+      margin-bottom: 10px;
+    }
+    
+    .faq-answer {
+      color: #666;
+      line-height: 1.6;
+    }
+    
+    .footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: white;
+      opacity: 0.8;
+    }
+    
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 40px;
+      }
+      
+      .hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1>✨ Free Up Gigabytes<br>in Minutes</h1>
+      <p>Smart AI finds duplicate photos, similar images, and blurry shots.<br>Clean your photo library without the hassle.</p>
+      <a href="app.html" class="cta-button" onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Hero Button'});">
+        🚀 Start Cleaning - It's Free
+      </a>
+    </div>
+    
+    <!-- AdSense Ad -->
+    <div style="text-align: center; margin: 40px 0;">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXX"
+           data-ad-slot="YYYYYYYYYY"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    
+    <!-- Stats -->
+    <div class="stats">
+      <h2 class="section-title" style="color: white; margin-bottom: 20px;">Trusted by Thousands</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">10K+</div>
+          <div class="stat-label">Photos Cleaned</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">2.5GB</div>
+          <div class="stat-label">Avg. Space Saved</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">30 sec</div>
+          <div class="stat-label">Average Cleanup Time</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Privacy Protected</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Features -->
+    <h2 class="section-title">Why Choose CleanSnap?</h2>
+    <div class="features">
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <div class="feature-title">Find Duplicates</div>
+        <div class="feature-desc">Advanced AI detects exact duplicate photos instantly. No more manual searching through thousands of images.</div>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">📷</div>
+        <div class="feature-title">Similar Photos</div>
+        <div class="feature-desc">Groups similar shots and burst photos. Keeps the best, suggests deleting the rest.</div>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">🧠</div>
+        <div class="feature-title">Smart AI</div>
+        <div class="feature-desc">Automatically identifies blurry, poorly lit, or low-quality photos you probably don't need.</div>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">👆</div>
+        <div class="feature-title">Swipe Mode</div>
+        <div class="feature-desc">Tinder-style interface makes cleanup fun. Swipe left to delete, right to keep.</div>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <div class="feature-title">100% Private</div>
+        <div class="feature-desc">Everything processes on YOUR device. No uploads, no cloud, no data collection.</div>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-title">Lightning Fast</div>
+        <div class="feature-desc">Analyze thousands of photos in seconds. Get results instantly, clean up in minutes.</div>
+      </div>
+    </div>
+    
+    <!-- How It Works -->
+    <div class="how-it-works">
+      <h2 class="section-title">How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-title">Upload Photos</div>
+          <div class="feature-desc">Select photos from your device. Works on desktop and mobile.</div>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-title">AI Analyzes</div>
+          <div class="feature-desc">Smart algorithms find duplicates, similar photos, and poor quality images.</div>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-title">Review & Delete</div>
+          <div class="feature-desc">You're in control. Review suggestions and delete what you don't need.</div>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-title">Free Up Space</div>
+          <div class="feature-desc">Download your cleaned library and enjoy your extra storage!</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- CTA -->
+    <div class="hero">
+      <h2 style="font-size: 40px; margin-bottom: 30px;">Ready to Clean Up?</h2>
+      <a href="app.html" class="cta-button" onclick="gtag('event', 'click', {'event_category': 'CTA', 'event_label': 'Bottom Button'});">
+        ✨ Start Cleaning Now - Free
+      </a>
+    </div>
+    
+    <!-- FAQ -->
+    <div class="faq">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">Is CleanSnap really free?</div>
+        <div class="faq-answer">Yes! The web version is completely free. We show ads to keep it free. A premium mobile app is coming soon.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Is my data safe?</div>
+        <div class="faq-answer">Absolutely. All processing happens on YOUR device. We never upload your photos to any server. What happens on your device stays on your device.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">How does duplicate detection work?</div>
+        <div class="faq-answer">We use perceptual hashing algorithms to analyze images. This creates a unique "fingerprint" for each photo, allowing us to detect exact duplicates and similar images with high accuracy.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Will photos be permanently deleted?</div>
+        <div class="faq-answer">Photos are only marked for deletion in our app. You download a cleaned library, and you control what happens to the originals. Nothing is deleted from your device automatically.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Does it work on mobile?</div>
+        <div class="faq-answer">Yes! The web app works on iPhone and Android browsers. A native mobile app with even more features is coming soon.</div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+      <p>© 2025 CleanSnap. Your photos, your privacy, your control.</p>
+      <p style="margin-top: 10px;">
+        <a href="privacy.html" style="color: white; margin: 0 10px;">Privacy Policy</a> | 
+        <a href="terms.html" style="color: white; margin: 0 10px;">Terms of Service</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
